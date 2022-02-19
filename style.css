@@ -16,8 +16,18 @@ img{
     display: block;
 }
 
+p,
+a,
+h1,
+h2,
+h3{
+    margin: 0px;
+}
+
 ul{
     list-style: none;
+    padding: 0px;
+    margin: 0px;
 }
 
 a{
@@ -43,6 +53,7 @@ p{
 }
 
 .menu a{
+    display: block;
     background: #fff;
     padding: 1rem 2rem;
     border: 2px #fff solid;
@@ -80,7 +91,7 @@ p{
     width: 60px;
     height: 4px;
     position: absolute;
-    top: 30%;
+    top: 8%;
     right: -30px;
     background: red;
 }
@@ -105,4 +116,37 @@ p{
     color: rgba(0, 0, 0, 0.2);
     align-self: center;
     background-image: url('img/onda.svg');
+}
+
+.vantagens{
+    background: #fff;
+    padding: 40px;
+}
+
+.vantagens-itens{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px 20px;
+    padding: 20px;
+    border-left: 4px solid transparent;
+}
+
+.vantagens-itens:nth-child(odd){
+    background: #f7f7f7;
+}
+
+.vantagens-itens:hover{
+    border-color:  #e21;
+}
+
+.vantagens p{
+    grid-column: 2;
+}
+
+.rodape{
+    background: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 40px;
+    box-sizing:border-box
 }
