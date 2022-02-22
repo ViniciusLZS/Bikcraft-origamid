@@ -96,6 +96,11 @@ p{
     background: red;
 }
 
+.introducao-cover img{
+    object-fit: cover;
+    height: 100%;
+}
+
 .botton{
     background: red;
     padding: 1rem 2rem;
@@ -149,4 +154,47 @@ p{
     text-align: center;
     padding: 40px;
     box-sizing:border-box
+}
+
+@media(max-width: 1000px){
+    .conteudo-media{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .subtitulo{
+        text-align: center;
+    }
+}
+
+@media(max-width: 600px){
+    .conteudo{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    body{
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    .header{
+      gap: 20px;
+    }
+
+    .introducao{
+        justify-items: start;
+    }
+
+    .introducao p{
+        text-align: left;        
+    }
+    .introducao::before{
+        content: none;
+    }
+
+    .menu{
+        gap: 10px;
+    }
+    .menu a{
+        padding: 1rem 1rem;
+    }
 }
